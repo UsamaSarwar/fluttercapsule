@@ -42,3 +42,20 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+## Stateless Widget
+```dart
+import 'package:flutter/material.dart';
+
+class World extends StatelessWidget {
+  Greeter({Key key @required this.name}) : super(key: key);
+
+  final String name;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Text('Hello, $name'),
+    );
+  }
+}
+```
