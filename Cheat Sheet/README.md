@@ -7,3 +7,15 @@ FOLLOW || [YouTube](https://www.youtube.com/UsamaSarwar/) | [LinkedIn](https://w
 ```bash
 flutter doctor
 ```
+## Create Project
+```bash
+flutter create project_name
+```
+### Specify Organization/Package Name
+```bash
+flutter create --org com.yourorg project_name
+```
+### Flutter Create | Release Command
+```bash
+flutter create --androidx -t app --org com.companyname -a kotlin -i swift project_name
+```
