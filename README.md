@@ -2,9 +2,12 @@
 
 ![Flutter](https://i.imgur.com/tq2qQaH.jpg)
 
-# Flutter Cheat Sheet
-
-> This cheat sheet is very helpful during Flutter Development.
+# Flutter Notes by Usama Sarwar
+> Q U I C K L I N K S
+> [Check Flutter Health](#check-flutter-health)
+> [Create Flutter Project](#create-project)
+> [Hello World App](#hello-world)
+> [Stateless Widget](#stateless-widget)
 
 ## Check Flutter Health
 ```bash
@@ -14,11 +17,11 @@ flutter doctor
 ```bash
 flutter create project_name
 ```
-### Specify Organization/Package Name
+### Specify Package Name
 ```bash
 flutter create --org com.yourorg project_name
 ```
-### Flutter Create | Release Command
+### Create Command for Release
 ```bash
 flutter create --androidx -t app --org com.companyname -a kotlin -i swift project_name
 ```
