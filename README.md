@@ -2,5 +2,62 @@
 
 ![Flutter](https://i.imgur.com/tq2qQaH.jpg)
 
-# Table of Contents
-1.  [Flutter Cheat Sheet](https://github.com/csUsamaSarwar/flutter/tree/master/Cheat%20Sheet)
+# Flutter Cheat Sheet
+
+> This cheat sheet is very helpful during Flutter Development.
+
+## Check Flutter Health
+```bash
+flutter doctor
+```
+## Create Project
+```bash
+flutter create project_name
+```
+### Specify Organization/Package Name
+```bash
+flutter create --org com.yourorg project_name
+```
+### Flutter Create | Release Command
+```bash
+flutter create --androidx -t app --org com.companyname -a kotlin -i swift project_name
+```
+## Hello World
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+    runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Hello world!',
+      home: Scaffold(
+        body: Center(
+          child: Text('Hello world'),
+        ),
+      ),
+    );
+  }
+}
+```
+## Stateless Widget
+```dart
+import 'package:flutter/material.dart';
+
+class World extends StatelessWidget {
+  Greeter({Key key @required this.name}) : super(key: key);
+
+  final String name;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Text('Hello, $name'),
+    );
+  }
+}
+```
