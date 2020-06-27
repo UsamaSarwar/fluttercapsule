@@ -7,6 +7,7 @@
 - [Flutter Health](#flutter-health)
 - [Create Project](#create-project)
 - [Run Project](#run-project)
+- [Build Flutter App](#build-app)
 - [Hello World App](#hello-world)
 - [Hide Status Bar](#hide-status-bar)
 - [Stateful Widget](#stateful-widget)
@@ -26,6 +27,9 @@
 
 ## Flutter Health
 ```bash
+flutter upgrade
+```
+```bash
 flutter doctor
 ```
 ```bash
@@ -39,25 +43,38 @@ flutter pub cache repair
 ```
 ## Create Project
 ```bash
-flutter create [project_name]
+flutter create app_name
 ```
 ### Specify Package Name
 ```bash
-flutter create --org com.yourorg [project_name]
+flutter create --org com.company app_name
 ```
 ### Create Command for Release
 ```bash
-flutter create --androidx -t app --org com.companyname -a kotlin -i swift [project_name]
+flutter create --androidx -t app --org com.company -a kotlin -i swift app_name
 ```
 ## Run Project
 ```dart
 flutter run
 ```
 ```dart
-flutter run -d [Device]
+flutter run -v
 ```
+### Run on Specific Device
 ```dart
-flutter run --verbose
+flutter run -d device_ID
+```
+## Build App
+```dart
+flutter build apk
+```
+### Generate App Bundles
+```dart
+flutter build appbundle --target-platform android-arm,android-arm64,android-x64
+```
+### Split the APKs per ABI (Reduces the APK Size to the minimum)
+```dart
+flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
 ```
 ## Hello World
 ```dart
