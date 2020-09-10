@@ -1,34 +1,17 @@
+[![Usama Sarwar](https://img.shields.io/badge/Portfolio-Usama_Sarwar-000000?logo=opsgenie&logoColor=ffffff)](https://csusamasarwar.github.io) [![Usama Sarwar](https://img.shields.io/badge/Github-211F1F?logo=GitHub&logoColor=ffffff)](https://github.com/csusamasarwar/) [![Usama Sarwar](https://img.shields.io/badge/Subscribe-FF0000?logo=Youtube&logoColor=ffffff)](https://www.youtube.com/UsamaSarwar?sub_confirmation=1) [![Usama Sarwar](https://img.shields.io/badge/Connect-0077B5?logo=Linkedin&logoColor=ffffff)](https://www.linkedin.com/in/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-1877F2?logo=Facebook&logoColor=ffffff)](https://www.facebook.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-08A0E9?logo=Twitter&logoColor=ffffff)](https://www.twitter.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-DD2A7B?logo=Instagram&logoColor=ffffff)](https://www.instagram.com/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Gmail-D44638?logo=gmail&logoColor=ffffff)](mailto:UsamaSarwarOfficial@gmail.com) [![Usama Sarwar](https://img.shields.io/badge/Chat-1877F2?logo=Messenger&logoColor=ffffff)](https://m.me/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Chat-25D366?logo=WhatsApp&logoColor=ffffff)](https://wa.me/923100007773?text=%23Github) [![Usama Sarwar](https://img.shields.io/badge/Support_Me-784fff?logo=buy-me-a-coffee&logoColor=ffffff)](https://wa.me/923100007773?text=Thank%20you%20for%20supporting%20me%20%E2%9D%A4%0ABank%20Account%20Details%0ATitle%3A%20USAMA%20SARWAR%0AIBAN%3A%20PK90HABB0022417901576303)
 
- [![Usama Sarwar](https://img.shields.io/badge/Portfolio-Usama_Sarwar-000000?logo=opsgenie&logoColor=ffffff)](https://csusamasarwar.github.io) [![Usama Sarwar](https://img.shields.io/badge/Github-211F1F?logo=GitHub&logoColor=ffffff)](https://github.com/csusamasarwar/) [![Usama Sarwar](https://img.shields.io/badge/Subscribe-FF0000?logo=Youtube&logoColor=ffffff)](https://www.youtube.com/UsamaSarwar?sub_confirmation=1) [![Usama Sarwar](https://img.shields.io/badge/Connect-0077B5?logo=Linkedin&logoColor=ffffff)](https://www.linkedin.com/in/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-1877F2?logo=Facebook&logoColor=ffffff)](https://www.facebook.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-08A0E9?logo=Twitter&logoColor=ffffff)](https://www.twitter.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-DD2A7B?logo=Instagram&logoColor=ffffff)](https://www.instagram.com/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Gmail-D44638?logo=gmail&logoColor=ffffff)](mailto:UsamaSarwarOfficial@gmail.com) [![Usama Sarwar](https://img.shields.io/badge/Chat-1877F2?logo=Messenger&logoColor=ffffff)](https://m.me/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Chat-25D366?logo=WhatsApp&logoColor=ffffff)](https://wa.me/923100007773?text=%23Github) [![Usama Sarwar](https://img.shields.io/badge/Support_Me-784fff?logo=buy-me-a-coffee&logoColor=ffffff)](https://wa.me/923100007773?text=Thank%20you%20for%20supporting%20me%20%E2%9D%A4%0ABank%20Account%20Details%0ATitle%3A%20USAMA%20SARWAR%0AIBAN%3A%20PK90HABB0022417901576303)
- 
 ![Flutter](https://i.imgur.com/tq2qQaH.jpg)
 
-# Flutter Notes by Usama Sarwar
-#### Q U I C K L I N K S
-- [Flutter Health](#flutter-health)
-- [Create Project](#create-project)
-- [Run Project](#run-project)
-- [Build Flutter App](#build-app)
-- [Hello World App](#hello-world)
-- [Hide Status Bar](#hide-status-bar)
-- [Stateful Widget](#stateful-widget)
-- [Stateful Widget](#stateful-widget)
-- [Stateless Widget](#stateless-widget)
-- [Lock Orientation](#lock-orientation)
-- [Gesture Detector](#gesture-detector)
-- [Loading Indicator](#loading-indicator)
-- [Show Dialog Alert](#show-dialog-alert)
-- [Routing Navigation](#routing-navigation)
-- [Inkwell Button Effect](#inkwell-button-effect)
-- [Platform Specific Code](#platform-specific-code)
-- [HTTP Request](#http-request)
-- [Async Await](#async-await)
-- [Arrays](#arrays)
-- [JSON](#json)
+# FLUTTER NOTES BY USAMA SARWAR
+#### Q U I C K L I N K S 
+[![Usama Sarwar](https://img.shields.io/badge/HEALTH-000000)](#flutter-health) [![Usama Sarwar](https://img.shields.io/badge/CREATE-000000)](#create-project) [![Usama Sarwar](https://img.shields.io/badge/RUN-000000)](#run-project) [![Usama Sarwar](https://img.shields.io/badge/BUILD-000000)](#build-app) [![Usama Sarwar](https://img.shields.io/badge/Status_Bar-000000)](#hide-status-bar) [![Usama Sarwar](https://img.shields.io/badge/Orientation-000000)](#lock-orientation) [![Usama Sarwar](https://img.shields.io/badge/Loading-000000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-000000)](#show-dialog-alert)
 
 ## Flutter Health
 ```bash
 flutter upgrade
+```
+```bash
+flutter config
 ```
 ```bash
 flutter doctor
@@ -77,27 +60,7 @@ flutter build appbundle --target-platform android-arm,android-arm64,android-x64
 ```dart
 flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
 ```
-## Hello World
-```dart
-import 'package:flutter/material.dart';
 
-void main() {
-    runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Hello world!',
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello world'),
-        ),
-      ),
-    );
-  }
-}
 ```
 ## Stateless Widget
 ```dart
@@ -116,60 +79,8 @@ class World extends StatelessWidget {
   }
 }
 ```
-## Stateful Widget
-```dart
-import 'package:flutter/material.dart';
 
-class WidgetWithState extends StatefulWidget {
-  @override
-  _WidgetWithStateState createState() => _WidgetWithStateState();
-}
 
-class _WidgetWithStateState extends State<WidgetWithState> {
-  int counter = 0;
-
-  increment() {
-    setState(() {
-      counter++;
-    });
-  }
-
-  decrement() {
-    setState(() {
-      counter--;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        FlatButton(onPressed: increment, child: Text('Increment++')),
-        FlatButton(onPressed: decrement, child: Text('Decrement--')),
-        Text(counter.toString()),
-      ],
-    );
-  }
-}
-```
-## Inkwell Button Effect
-```dart
-InkWell(
-  child: Text('Tap me!'),
-  onTap: _onTap,
-  onLongPress: _onLongPress,
-  onDoubleTap: _onDoubleTap,
-  onTapCancel: _onTapCancel,
-);
-```
-## Gesture Detector
-```dart
-GestureDetector(
-  onTap: _onTap,
-  onLongPress: _onLongPress,
-  child: Text('Button'),
-);
-```
 ## Loading Indicator
 ```dart
 class SomeWidget extends StatefulWidget {
@@ -199,37 +110,24 @@ class _SomeWidgetState extends State<SomeWidget> {
   }
 }
 ```
-## Platform Specific Code
-```dart
-import 'dart:io' show Platform;
-
-if (Platform.isIOS) {
-  doSmthIOSSpecific();
-}
-
-if (Platform.isAndroid) {
-  doSmthAndroidSpecific();
-}
-```
 ## Hide Status Bar
 ```dart
 import 'package:flutter/services.dart';
 
 void main() {
+	// Hide Status bar and Bottom Navigation Bar
     SystemChrome.setEnabledSystemUIOverlays([]);
 }
 ```
 ## Lock Orientation
 ```dart
+// Import library
 import 'package:flutter/services.dart';
-
-void main() async {
+  // Add this into your main()
   await SystemChrome.setPreferredOrientations([
+	// Locks Device orientation to always potrait
     DeviceOrientation.portraitUp,
   ]);
-
-  runApp(App());
-}
 ```
 ## Show Dialog Alert
 ```dart
@@ -267,219 +165,3 @@ showDialog<void>(
   },
 );
 ```
-## Routing Navigation
-```dart
-import 'package:flutter/material.dart';
-
-class FirstScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: RaisedButton(
-        child: Text('Go to SecondScreen'),
-        onPressed: () => Navigator.pushNamed(context, '/second'),
-      ),
-    );
-  }
-}
-
-class SecondScreen extends StatelessWidget {
-  void _pushSecondScreen(context) {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => SecondScreen()));
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        RaisedButton(
-          child: Text('Go back!'),
-          onPressed: () => Navigator.pop(context),
-        ),
-        RaisedButton(
-          child: Text('Go to SecondScreen... again!'),
-          onPressed: () => _pushSecondScreen(context),
-        ),
-      ],
-    );
-  }
-}
-
-void main() {
-  runApp(MaterialApp(
-    initialRoute: '/',
-    routes: {
-      '/': (context) => FirstScreen(),
-      '/second': (context) => SecondScreen(),
-    },
-  ));
-}
-```
-## Arrays
-```dart
-final length = items.length;
-
-final newItems = items..addAll(otherItems);
-
-final allEven = items.every((item) => item % 2 == 0);
-
-final filled = List<int>.filled(3, 42);
-
-final even = items.where((n) => n % 2 == 0).toList();
-
-final found = items.firstWhere((item) => item.id == 42);
-
-final index = items.indexWhere((item) => item.id == 42);
-
-final flat = items.expand((_) => _).toList();
-
-final mapped = items.expand((item) => [item + 1]).toList();
-
-items.forEach((item) => print(item));
-
-items.asMap().forEach((index, item) => print('$item, $index'));
-
-final includes = items.contains(42);
-
-final indexOf = items.indexOf(42);
-
-final joined = items.join(',');
-
-final newItems = items.map((item) => item + 1).toList();
-
-final item = items.removeLast();
-
-items.add(42);
-
-final reduced = items.fold({}, (acc, item) {
-  acc[item.id] = item;
-  return acc;
-});
-
-final reversed = items.reversed;
-
-items.removeAt(0);
-
-final slice = items.sublist(15, 42);
-
-final hasOdd = items.any((item) => item % 2 == 0);
-
-items.sort((a, b) => a - b);
-
-items.replaceRange(15, 42, [1, 2, 3]);
-
-items.insert(0, 42);
-```
-## HTTP Request
-```yaml
-dependencies:
-  http: ^0.12.0
-```
-```dart
-import 'dart:convert' show json;
-import 'package:http/http.dart' as http;
-
-http.get(API_URL).then((http.Response res) {
-    final data = json.decode(res.body);
-    print(data);
-});
-```
-## Async Await
-```dart
-Future<int> doSmthAsync() async {
-  final result = await Future.value(42);
-  return result;
-}
-
-class SomeClass {
-  method() async {
-    final result = await Future.value(42);
-    return result;
-  }
-}
-```
-## JSON
-
-```dart
-import 'dart:convert' show json;
-
-json.decode(someString);
-json.encode(encodableObject);
-
-```
-
-`json.decode`  returns a  `dynamic`  type, which is probably not very useful
-
-You should describe each entity as a Dart class with  `fromJson`  and  `toJson`  methods
-
-```dart
-class User {
-    String displayName;
-    String photoUrl;
-
-    User({this.displayName, this.photoUrl});
-
-    User.fromJson(Map<String, dynamic> json)
-      : displayName = json['displayName'],
-        photoUrl = json['photoUrl'];
-
-    Map<String, dynamic> toJson() {
-      return {
-        'displayName': displayName,
-        'photoUrl': photoUrl,
-      };
-    }
-}
-
-final user = User.fromJson(json.decode(jsonString));
-json.encode(user.toJson());
-
-```
-
-However this approach is error-prone (e.g. you can forget to update map key after class field was renamed), so you can use  `json_serializable`  as an alternative
-
-Add  `json_annotation`,  `build_runner`  and  `json_serializable`  to dependencies
-
-```yaml
-dependencies:
-  json_annotation: ^2.0.0
-
-dev_dependencies:
-  build_runner: ^1.0.0
-  json_serializable: ^2.0.0
-
-```
-
-Update your code
-
-```dart
-import 'package:json_annotation/json_annotation.dart';
-
-part 'user.g.dart';
-
-@JsonSerializable()
-class User {
-  String displayName;
-  String photoUrl;
-
-  User({this.displayName this.photoUrl});
-
-  // _$UserFromJson is generated and available in user.g.dart
-  factory User.fromJson(Map<String, dynamic> json) {
-    return _$UserFromJson(json);
-  }
-
-  // _$UserToJson is generated and available in user.g.dart
-  Map<String, dynamic> toJson() => _$UserToJson(this);
-}
-
-final user = User.fromJson(json.decode(jsonString));
-json.encode(user); // toJson is called by encode
-
-```
-
-Run  `flutter packages pub run build_runner build`  to generate serialization/deserialization code
-
-To watch for changes run  `flutter packages pub run build_runner watch`
-
-[Read more about JSON and serialization here](https://flutter.dev/docs/development/data-and-backend/json)
