@@ -5,9 +5,13 @@
 
 # FLUTTER NOTES BY USAMA SARWAR
 #### Q U I C K L I N K S 
-[![HEALTH](https://img.shields.io/badge/FLUTTER-HEALTH_STATUS-000000)](#flutter-health-status) [![Usama Sarwar](https://img.shields.io/badge/CREATE-000000)](#create-app) [![Usama Sarwar](https://img.shields.io/badge/RUN-000000)](#run-app) [![Usama Sarwar](https://img.shields.io/badge/BUILD-000000)](#build-app) 
-
-[![Usama Sarwar](https://img.shields.io/badge/Hide_Status_Bar-000000)](#hide-status-bar) [![Usama Sarwar](https://img.shields.io/badge/Orientation-000000)](#lock-orientation) [![Usama Sarwar](https://img.shields.io/badge/Loading-000000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-000000)](#show-dialog-alert)
+[![HEALTH](https://img.shields.io/badge/FLUTTER-HEALTH_STATUS-000000)](#flutter-health-status) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-CREATE-000000)](#create-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-RUN-000000)](#run-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-BUILD-000000)](#build-app) 
+##### BEGINNER LEVEL APPS
+[![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-000000)](#basic-app) 
+##### SYSTEM SETTINGS
+[![Usama Sarwar](https://img.shields.io/badge/Status_Bar-Settings-000000)](#status-bar) [![Usama Sarwar](https://img.shields.io/badge/Screen_Orientation-Settings-000000)](#lock-orientation) 
+##### WIDGETS
+[![Usama Sarwar](https://img.shields.io/badge/Loading-000000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-000000)](#show-dialog-alert)
 
 ## Flutter Health Status
 _Run this command to check Flutter Status on your device_
@@ -92,6 +96,136 @@ _Run this command to reduce the APK Size to the minimum_
 flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+## Basic App
+_This is a very basic beginner level app that is showing two List Tiles in its body. To run this code copy and paste it in_ `lib/main.dart`
+```dart
+// Importing Material Library
+import 'package:flutter/material.dart';
+
+// Main Function of this App
+// We will call runApp that is a built-in function that will run the App
+void main() => runApp(
+      // Material App is the outer most Parent Widget that will wrap the child widgets
+      MaterialApp(
+        // To remove the Debug Tag from the App
+        debugShowCheckedModeBanner: false,
+        // Setting App Theme data
+        theme: ThemeData(
+          primarySwatch: Colors.red,
+        ),
+        // Title is the title of the app
+        title: 'Messenger',
+        // Home widget of Material App
+        home: Scaffold(
+          // App Bar of the App
+          appBar: AppBar(
+            // Title of the App Bar
+            title: Text('Inbox'),
+            // This is the leading icon on the App Bar
+            leading: Icon(Icons.menu_open),
+            // These are action icon(s) on the App Bar
+            actions: [
+              // padding for wraping with some space
+              Padding(
+                // padding: EdgeInsets.all(8.0), // Padding value set to 8.0 on all sides
+                padding: EdgeInsets.only(right: 15.0), // Padding value set to 15.0 on right side
+                child: Icon(Icons.create_sharp), // Added a favourite icon
+              ),
+            ],
+          ),
+          // This is the body of Scafold
+          body: Column(
+            // Alignment across main (Vertical) Axis
+            mainAxisAlignment: MainAxisAlignment.start,
+            // Alignment across cross (Horizontal) Axis
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // For setting some space around Card
+              Padding(
+                padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0.0),
+                // Creating Card
+                child: Card(
+                  elevation: 5.0,
+                  // Setting List Tile
+                  child: ListTile(
+                    // Setting Leading Icon
+                    leading: Icon(
+                      Icons.account_circle,
+                      // Setting Size of the Icon
+                      size: 40.0,
+                      // Setting Icon Color
+                      color: Colors.amber,
+                    ),
+                    // Setting Title of the List Tile
+                    title: Text('Usama Sarwar'),
+                    // Setting Sub-Title of the List Tile
+                    subtitle: Text('Happy Birthday to you 🎂'),
+                    // Setting Trailing Icon
+                    trailing: Icon(
+                      Icons.send,
+                      color: Colors.amberAccent,
+                    ),
+                  ),
+                ),
+              ),
+              // For setting some space around Card
+              Padding(
+                padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0.0),
+                // Creating Card
+                child: Card(
+                  elevation: 5.0,
+                  // Setting List Tile
+                  child: ListTile(
+                    // Setting Leading Icon
+                    leading: Icon(
+                      Icons.account_circle,
+                      // Setting Size of the Icon
+                      size: 40.0,
+                      // Setting Icon Color
+                      color: Colors.grey[700],
+                    ),
+                    // Setting Title of the List Tile
+                    title: Text('Ayesha Ali'),
+                    // Setting Sub-Title of the List Tile
+                    subtitle: Text('Let\'s meet at 10\'O Clock ⌚'),
+                    // Setting Trailing Icon
+                    trailing: Icon(
+                      Icons.send,
+                      color: Colors.grey[700],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+
+## Status Bar
+```dart
+// Import Services Package
+import 'package:flutter/services.dart'; 
+
+void main() {
+	// Hide Status bar and Bottom Navigation Bar
+    SystemChrome.setEnabledSystemUIOverlays([]);
+}
+```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+## Lock Orientation
+```dart
+// Import library
+import 'package:flutter/services.dart';
+  // Add this into your main()
+  await SystemChrome.setPreferredOrientations([
+	// Locks Device orientation to always potrait
+    DeviceOrientation.portraitUp,
+  ]);
+```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Loading Indicator
 ```dart
 class SomeWidget extends StatefulWidget {
@@ -120,28 +254,6 @@ class _SomeWidgetState extends State<SomeWidget> {
     );
   }
 }
-```
-[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
-## Hide Status Bar
-```dart
-// Import Services Package
-import 'package:flutter/services.dart'; 
-
-void main() {
-	// Hide Status bar and Bottom Navigation Bar
-    SystemChrome.setEnabledSystemUIOverlays([]);
-}
-```
-[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
-## Lock Orientation
-```dart
-// Import library
-import 'package:flutter/services.dart';
-  // Add this into your main()
-  await SystemChrome.setPreferredOrientations([
-	// Locks Device orientation to always potrait
-    DeviceOrientation.portraitUp,
-  ]);
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Show Dialog Alert
