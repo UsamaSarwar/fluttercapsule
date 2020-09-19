@@ -10,42 +10,42 @@
 [![Usama Sarwar](https://img.shields.io/badge/Hide_Status_Bar-000000)](#hide-status-bar) [![Usama Sarwar](https://img.shields.io/badge/Orientation-000000)](#lock-orientation) [![Usama Sarwar](https://img.shields.io/badge/Loading-000000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-000000)](#show-dialog-alert)
 
 ## Flutter Health Status
-> _Run this command to check Flutter Status on your device_
+_Run this command to check Flutter Status on your device_
 ```bash
 flutter doctor
 ```
-> _Run this command to check available devices for Flutter_
+ _Run this command to check available devices for Flutter_
 ```bash
 flutter devices
 ```
-> _Run this command to upgrade Flutter_
+ _Run this command to upgrade Flutter_
 ```bash
 flutter upgrade
 ```
-> _Run this command to configure Flutter_
+ _Run this command to configure Flutter_
 ```bash
 flutter config
 ```
-> _Run this command to check Flutter Channel_
+ _Run this command to check Flutter Channel_
 ```bash
 flutter channel
 ```
-> _Run this command to switch to Flutter Channel Beta, likewise you can switch back to_ `stable`
+ _Run this command to switch to Flutter Channel Beta, likewise you can switch back to_ `stable`
 ```bash
 flutter channel beta
 ```
-> _Run this command to Repair Pub Cache_
+ _Run this command to Repair Pub Cache_
 ```bash
 flutter pub cache repair
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Create App
-> _Run this command to create an app, just replace `app_name` with your desired app name but without spaces and special characters except_ `Underscore(_)`
+_Run this command to create an app, just replace `app_name` with your desired app name but without spaces and special characters except_ `Underscore(_)`
 ```bash
 flutter create app_name
 ```
 #### Specify Package Name
-> _Create your Flutter app with this command to customize your app's package name; Package name from the below command will be_ `com.company.app_name` _You can change it accordingly_ 
+_Create your Flutter app with this command to customize your app's package name; Package name from the below command will be_ `com.company.app_name` _You can change it accordingly_ 
 ```bash
 flutter create --org com.company app_name
 ```
@@ -55,30 +55,30 @@ flutter create --androidx -t app --org com.company -a kotlin -i swift app_name
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Run App
-> _Run this command to run a Flutter Project_
+_Run this command to run a Flutter Project_
 ```dart
 flutter run
 ```
-> _Run this command to check runner logs while running_
+_Run this command to check runner logs while running_
 ```dart
 flutter run -v
 ```
-> _Run this command to run the project on specific device when there are muliple devices available replace_ `device_ID` _with your device ID_
-> _Sample: `flutter run -d chrome` to run flutter web project on Chrome Browser_ 
+_Run this command to run the project on specific device when there are muliple devices available replace_ `device_ID` _with your device ID_
+_Sample: `flutter run -d chrome` to run flutter web project on Chrome Browser_ 
 ```dart
 flutter run -d device_ID
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Build App
-> _Run this command to build Android .apk file_
+_Run this command to build Android .apk file_
 ```dart
 flutter build apk
 ```
-> _Run this command to build Android .apk file in release mode_
+_Run this command to build Android .apk file in release mode_
 ```dart
 flutter build apk --release
 ```
-> _Run this command to build Web root folder in release mode_
+_Run this command to build Web root folder in release mode_
 ```dart
 flutter build web --release
 ```
@@ -87,7 +87,7 @@ flutter build web --release
 flutter build appbundle --target-platform android-arm,android-arm64,android-x64
 ```
 #### Split the APKs per ABI
-> _Run this command to reduce the APK Size to the minimum_
+_Run this command to reduce the APK Size to the minimum_
 ```dart
 flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
 ```
