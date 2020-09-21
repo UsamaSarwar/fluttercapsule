@@ -1,17 +1,17 @@
 
-[![Usama Sarwar](https://img.shields.io/badge/Portfolio-Usama_Sarwar-000000?logo=opsgenie&logoColor=ffffff)](https://csusamasarwar.github.io) [![Usama Sarwar](https://img.shields.io/badge/Github-211F1F?logo=GitHub&logoColor=ffffff)](https://github.com/csusamasarwar/) [![Usama Sarwar](https://img.shields.io/badge/Subscribe-FF0000?logo=Youtube&logoColor=ffffff)](https://www.youtube.com/UsamaSarwar?sub_confirmation=1) [![Usama Sarwar](https://img.shields.io/badge/Connect-0077B5?logo=Linkedin&logoColor=ffffff)](https://www.linkedin.com/in/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-1877F2?logo=Facebook&logoColor=ffffff)](https://www.facebook.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-08A0E9?logo=Twitter&logoColor=ffffff)](https://www.twitter.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-DD2A7B?logo=Instagram&logoColor=ffffff)](https://www.instagram.com/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Gmail-D44638?logo=gmail&logoColor=ffffff)](mailto:UsamaSarwarOfficial@gmail.com) [![Usama Sarwar](https://img.shields.io/badge/Chat-1877F2?logo=Messenger&logoColor=ffffff)](https://m.me/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Chat-25D366?logo=WhatsApp&logoColor=ffffff)](https://wa.me/923100007773?text=%23Github) [![Usama Sarwar](https://img.shields.io/badge/Support_Me-784fff?logo=buy-me-a-coffee&logoColor=ffffff)](https://wa.me/923100007773?text=Thank%20you%20for%20supporting%20me%20%E2%9D%A4%0ABank%20Account%20Details%0ATitle%3A%20USAMA%20SARWAR%0AIBAN%3A%20PK90HABB0022417901576303)
+[![Usama Sarwar](https://img.shields.io/badge/Portfolio-Usama_Sarwar-000000?logo=opsgenie&logoColor=ffffff)](https://csusamasarwar.github.io) [![Usama Sarwar](https://img.shields.io/badge/Github-211F1F?logo=GitHub&logoColor=ffffff)](https://github.com/usamasarwar/) [![Usama Sarwar](https://img.shields.io/badge/Subscribe-FF0000?logo=Youtube&logoColor=ffffff)](https://www.youtube.com/UsamaSarwar?sub_confirmation=1) [![Usama Sarwar](https://img.shields.io/badge/Connect-0077B5?logo=Linkedin&logoColor=ffffff)](https://www.linkedin.com/in/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-1877F2?logo=Facebook&logoColor=ffffff)](https://www.facebook.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-08A0E9?logo=Twitter&logoColor=ffffff)](https://www.twitter.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-DD2A7B?logo=Instagram&logoColor=ffffff)](https://www.instagram.com/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Gmail-D44638?logo=gmail&logoColor=ffffff)](mailto:UsamaSarwarOfficial@gmail.com) [![Usama Sarwar](https://img.shields.io/badge/Chat-1877F2?logo=Messenger&logoColor=ffffff)](https://m.me/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Chat-25D366?logo=WhatsApp&logoColor=ffffff)](https://wa.me/923100007773?text=%23Github) [![Usama Sarwar](https://img.shields.io/badge/Support_Me-784fff?logo=buy-me-a-coffee&logoColor=ffffff)](https://wa.me/923100007773?text=Thank%20you%20for%20supporting%20me%20%E2%9D%A4%0ABank%20Account%20Details%0ATitle%3A%20USAMA%20SARWAR%0AIBAN%3A%20PK90HABB0022417901576303)
 
 ![Flutter](https://i.imgur.com/tq2qQaH.jpg)
 
-# FLUTTER NOTES BY USAMA SARWAR
+# FLUTTER NOTES
 #### Q U I C K L I N K S 
-[![HEALTH](https://img.shields.io/badge/FLUTTER-HEALTH_STATUS-000000)](#flutter-health-status) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-CREATE-000000)](#create-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-RUN-000000)](#run-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-BUILD-000000)](#build-app) 
-##### BEGINNER LEVEL APPS
-[![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-000000)](#basic-app) 
+[![HEALTH](https://img.shields.io/badge/FLUTTER-HEALTH_STATUS-64DD17)](#flutter-health-status) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-CREATE-304FFE)](#create-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-RUN-2962FF)](#run-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-BUILD-0091EA)](#build-app) 
+##### BEGINNER LEVEL FLUTTER APPS
+[![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-AA00FF)](#basic-app) [![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Stateless_Widget-C51162)](#stateless-widget) [![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Stateful_Widget-d50000)](#stateful-widget) 
 ##### SYSTEM SETTINGS
-[![Usama Sarwar](https://img.shields.io/badge/Status_Bar-Settings-000000)](#status-bar) [![Usama Sarwar](https://img.shields.io/badge/Screen_Orientation-Settings-000000)](#lock-orientation) 
+[![Usama Sarwar](https://img.shields.io/badge/Status_Bar-Settings-DD2C00)](#status-bar) [![Usama Sarwar](https://img.shields.io/badge/Screen_Orientation-Settings-FF6D00)](#lock-orientation) 
 ##### WIDGETS
-[![Usama Sarwar](https://img.shields.io/badge/Loading-000000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-000000)](#show-dialog-alert)
+[![Usama Sarwar](https://img.shields.io/badge/Loading-d50000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-263238)](#show-dialog-alert)
 
 ## Flutter Health Status
 _Run this command to check Flutter Status on your device_
@@ -111,8 +111,7 @@ void main() => runApp(
         debugShowCheckedModeBanner: false,
         // Setting App Theme data
         theme: ThemeData(
-          primarySwatch: Colors.red,
-        ),
+          primarySwatch: Colors.red,),
         // Title is the title of the app
         title: 'Messenger',
         // Home widget of Material App
@@ -163,11 +162,7 @@ void main() => runApp(
                     // Setting Trailing Icon
                     trailing: Icon(
                       Icons.send,
-                      color: Colors.amberAccent,
-                    ),
-                  ),
-                ),
-              ),
+                      color: Colors.amberAccent),),),),
               // For setting some space around Card
               Padding(
                 padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0.0),
@@ -191,19 +186,158 @@ void main() => runApp(
                     // Setting Trailing Icon
                     trailing: Icon(
                       Icons.send,
-                      color: Colors.grey[700],
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
+                      color: Colors.grey[700],),),),),],),),),);
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 
+## Stateless Widget
+In Stateless widget the state of app can't change. Here is an example of a counter app in which you can observe the chnaging value in the console but on UI it will not render. To render the value accourdingly you will have to use Stateful Widget that is the next example.
+```dart
+// Importing Material Library
+import  'package:flutter/material.dart';
+
+// Main Function of this App
+// We will call runApp that is a built-in function that will run the App
+void  main() => runApp(MyApp());
+
+class  MyApp  extends  StatelessWidget {
+
+// Initilized a variable
+static  int number = 1;
+
+// Function for performing task
+void  increment() {
+number++;
+}
+
+@override
+Widget  build(BuildContext context) {
+return  // Material App is the outer most Parent Widget that will wrap the child widgets
+MaterialApp(
+// To remove the Debug Tag from the App
+debugShowCheckedModeBanner: false,
+
+// Setting App Theme data
+theme: ThemeData(
+primarySwatch: Colors.red,
+),
+
+// Title is the title of the app
+title: 'Stateless Widget',
+
+// Home widget of Material App
+home: Scaffold(
+
+// App Bar of the App
+appBar: AppBar(
+
+// Title of the App Bar
+title: Text('Stateless Widget Example'),
+
+// These are action icon(s) on the App Bar
+),
+// Body of Scafold
+body: Center(
+// Display a text in the center
+// This is how to display a text
+child: Text(
+// Concatination of a String with some variable
+'Number: $number', // However this will not update
+// Styling text
+style: TextStyle(
+// Setting fontSize
+fontSize: 25.0,),),),
+
+// FloatingActionButton Added
+floatingActionButton: FloatingActionButton(
+// Setting Icon
+child: Icon(Icons.add),
+// Setting action on button when it is pressed
+onPressed: () {
+// Funtion for the incrementation
+increment();
+
+// To check the value of number on console
+print('Number: $number');
+},),),);}}
+```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+## Stateful Widget
+In Stateful Widget, the state of the app can be changed. It renders everytime whenver it detectects the change in the value of some variable. Here is the sample code.
+```dart
+// Importing Material Library
+import  'package:flutter/material.dart';
+
+// Main Function of this App
+// We will call runApp that is a built-in function that will run the App
+void  main() => runApp(MyApp());
+class  MyApp  extends  StatefulWidget {
+@override
+_MyAppState  createState() => _MyAppState();
+}
+class  _MyAppState  extends  State<MyApp> {
+
+// Initilized a variable
+static  int number = 1;
+
+// Increment Function
+void  increment() {
+// Calling SetState will render the User Interface and update it accordingly
+setState(() {
+number++;
+});}
+
+@override
+Widget  build(BuildContext context) {
+return  // Material App is the outer most Parent Widget that will wrap the child widgets
+MaterialApp(
+// To remove the Debug Tag from the App
+debugShowCheckedModeBanner: false,
+
+// Setting App Theme data
+theme: ThemeData(
+primarySwatch: Colors.red,
+),
+
+// Title is the title of the app
+title: 'Stateful Widget',
+
+// Home widget of Material App
+home: Scaffold(
+
+// App Bar of the App
+appBar: AppBar(
+
+// Title of the App Bar
+title: Text('Stateful Widget Example'),
+// These are action icon(s) on the App Bar
+),
+
+// Body of Scafold
+body: Center(
+// Display a text in the center
+// This is how to display a text
+child: Text(
+// Concatination of a String with some variable
+'Number: $number', // However this will not update
+// Styling text
+style: TextStyle(
+// Setting fontSize
+fontSize: 25.0,
+),),),
+// FloatingActionButton Added
+floatingActionButton: FloatingActionButton(
+// Setting Icon
+child: Icon(Icons.add),
+// Setting action on button when it is pressed
+onPressed: () {
+// Funtion for the incrementation
+increment();
+
+// To check the value of number on console
+print('Number: $number');},),),);}}
+```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Status Bar
 ```dart
 // Import Services Package
