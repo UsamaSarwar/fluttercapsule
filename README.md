@@ -1,5 +1,5 @@
 
-[![Usama Sarwar](https://img.shields.io/badge/Portfolio-Usama_Sarwar-000000?logo=opsgenie&logoColor=ffffff)](https://usamasarwar.github.io) [![Usama Sarwar](https://img.shields.io/badge/Github-211F1F?logo=GitHub&logoColor=ffffff)](https://github.com/usamasarwar/) [![Usama Sarwar](https://img.shields.io/badge/Subscribe-FF0000?logo=Youtube&logoColor=ffffff)](https://www.youtube.com/UsamaSarwar?sub_confirmation=1) [![Usama Sarwar](https://img.shields.io/badge/Connect-0077B5?logo=Linkedin&logoColor=ffffff)](https://www.linkedin.com/in/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-1877F2?logo=Facebook&logoColor=ffffff)](https://www.facebook.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-08A0E9?logo=Twitter&logoColor=ffffff)](https://www.twitter.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-DD2A7B?logo=Instagram&logoColor=ffffff)](https://www.instagram.com/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Gmail-D44638?logo=gmail&logoColor=ffffff)](mailto:UsamaSarwarOfficial@gmail.com) [![Usama Sarwar](https://img.shields.io/badge/Chat-1877F2?logo=Messenger&logoColor=ffffff)](https://m.me/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Chat-25D366?logo=WhatsApp&logoColor=ffffff)](https://wa.me/923100007773?text=%23Github) [![Usama Sarwar](https://img.shields.io/badge/Support_Me-784fff?logo=buy-me-a-coffee&logoColor=ffffff)](https://wa.me/923100007773?text=Thank%20you%20for%20supporting%20me%20%E2%9D%A4%0ABank%20Account%20Details%0ATitle%3A%20USAMA%20SARWAR%0AIBAN%3A%20PK90HABB0022417901576303)
+[![Usama Sarwar](https://img.shields.io/badge/Portfolio-Usama_Sarwar-000000?logo=opsgenie&logoColor=ffffff)](https://csusamasarwar.github.io) [![Usama Sarwar](https://img.shields.io/badge/Github-211F1F?logo=GitHub&logoColor=ffffff)](https://github.com/usamasarwar/) [![Usama Sarwar](https://img.shields.io/badge/Subscribe-FF0000?logo=Youtube&logoColor=ffffff)](https://www.youtube.com/UsamaSarwar?sub_confirmation=1) [![Usama Sarwar](https://img.shields.io/badge/Connect-0077B5?logo=Linkedin&logoColor=ffffff)](https://www.linkedin.com/in/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-1877F2?logo=Facebook&logoColor=ffffff)](https://www.facebook.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-08A0E9?logo=Twitter&logoColor=ffffff)](https://www.twitter.com/csUsamaSarwar/)  [![Usama Sarwar](https://img.shields.io/badge/Follow-DD2A7B?logo=Instagram&logoColor=ffffff)](https://www.instagram.com/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Gmail-D44638?logo=gmail&logoColor=ffffff)](mailto:UsamaSarwarOfficial@gmail.com) [![Usama Sarwar](https://img.shields.io/badge/Chat-1877F2?logo=Messenger&logoColor=ffffff)](https://m.me/csUsamaSarwar/) [![Usama Sarwar](https://img.shields.io/badge/Chat-25D366?logo=WhatsApp&logoColor=ffffff)](https://wa.me/923100007773?text=%23Github) [![Usama Sarwar](https://img.shields.io/badge/Support_Me-784fff?logo=buy-me-a-coffee&logoColor=ffffff)](https://wa.me/923100007773?text=Thank%20you%20for%20supporting%20me%20%E2%9D%A4%0ABank%20Account%20Details%0ATitle%3A%20USAMA%20SARWAR%0AIBAN%3A%20PK90HABB0022417901576303)
 
 ![Flutter](https://i.imgur.com/tq2qQaH.jpg)
 
@@ -7,7 +7,7 @@
 #### Q U I C K L I N K S 
 [![HEALTH](https://img.shields.io/badge/FLUTTER-HEALTH_STATUS-64DD17)](#flutter-health-status) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-CREATE-304FFE)](#create-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-RUN-2962FF)](#run-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-BUILD-0091EA)](#build-app) 
 ##### BEGINNER LEVEL FLUTTER APPS
-[![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-AA00FF)](#basic-app) [![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Stateless_Widget-C51162)](#stateless-widget) [![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Stateful_Widget-d50000)](#stateful-widget) 
+[![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-AA00FF)](#basic-app) [![Usama Sarwar](https://img.shields.io/badge/Stateless_Widget-C51162)](#stateless-widget) [![Usama Sarwar](https://img.shields.io/badge/Stateful_Widget-d50000)](#stateful-widget) [![Usama Sarwar](https://img.shields.io/badge/App-Navigation-00C853)](#app-navigation) 
 ##### SYSTEM SETTINGS
 [![Usama Sarwar](https://img.shields.io/badge/Status_Bar-Settings-DD2C00)](#status-bar) [![Usama Sarwar](https://img.shields.io/badge/Screen_Orientation-Settings-FF6D00)](#lock-orientation) 
 ##### WIDGETS
@@ -336,6 +336,96 @@ increment();
 
 // To check the value of number on console
 print('Number: $number');},),),);}}
+```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+## App Navigation
+Navigator in Flutter application manages the routes and screen navigation. According to official docs: _The navigator manages a stack of Route objects and provides methods for managing the stack, like Navigator.push and Navigator.pop._
+```dart
+import  'package:flutter/material.dart';
+void  main() => runApp(Home());
+
+class  Home  extends  StatelessWidget {
+// Home Widget
+@override
+Widget  build(BuildContext context) {
+return  MaterialApp(
+debugShowCheckedModeBanner: false,
+title: 'Routing Sample App',
+// Initial Route when App Starts
+initialRoute: '/',
+// Named Routes for all widgets in App
+routes: {
+// We can use any string instead of '\'
+'/': (context) => HomeScreen(), // Main Screen Route
+'/S1': (context) => Screen1(), // This is child screen of Home Screen
+'/S1/S2': (context) => Screen2(), // This is child screen of Screen 1
+},);}}
+  
+// Home Screen Widget
+class  HomeScreen  extends  StatelessWidget {
+@override
+Widget  build(BuildContext context) {
+return  Scaffold(
+appBar: AppBar(
+title: Text('Home Screen'),
+),
+body: Center(
+child: Column(
+mainAxisAlignment: MainAxisAlignment.center,
+children: [
+Text('This is Home Screen'),
+RaisedButton(
+child: Text('Screen 1'),
+// This will navigate to named route '/S1' that is Screen 1
+onPressed: () => Navigator.pushNamed(context, '/S1'),
+),],),),);}}
+// Screen 1 Widget
+class  Screen1  extends  StatelessWidget {
+@override
+Widget  build(BuildContext context) {
+return  Scaffold(
+appBar: AppBar(
+title: Text('Screen 1'),
+),
+body: Center(
+child: Column(
+mainAxisAlignment: MainAxisAlignment.center,
+children: [
+Text('This is Screen 1'),
+RaisedButton(
+child: Text('Home Screen'),
+// This will navigate to the parent screen from where it reached here
+onPressed: () => Navigator.pop(context),
+),
+RaisedButton(
+child: Text('Screen 2'),
+// This will navigate to named route '/S1/S2' that is Screen 2
+onPressed: () => Navigator.pushNamed(context, '/S1/S2'),
+),],),),);}}  
+
+// Screen 2 Widget
+class  Screen2  extends  StatelessWidget {
+@override
+Widget  build(BuildContext context) {
+return  Scaffold(
+appBar: AppBar(
+title: Text('Screen 2'),
+),
+body: Center(
+child: Column(
+mainAxisAlignment: MainAxisAlignment.center,
+children: [
+Text('This is Screen 2'),
+RaisedButton(
+child: Text('Home Screen'),
+// This will navigate to named route '/' that is Home Screen
+onPressed: () => Navigator.pushNamed(context, '/'),
+),
+RaisedButton(
+child: Text('Screen 1'),
+// This will navigate to the parent screen from where it reached here
+onPressed: () => Navigator.pop(context),
+),],),),);}}
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Status Bar
