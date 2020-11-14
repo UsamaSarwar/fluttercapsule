@@ -94,6 +94,10 @@ _Run this command to reduce the APK Size to the minimum_
 ```dart
 flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
 ```
+Run this command for Signing APK Key
+```bash
+.\keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
+```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Basic App
 _This is a very basic beginner level app that is showing two List Tiles in its body. To run this code copy and paste it in_ `lib/main.dart`
