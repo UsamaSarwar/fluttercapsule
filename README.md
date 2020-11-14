@@ -589,6 +589,7 @@ class _SomeWidgetState extends State<SomeWidget> {
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Show Dialog Alert
 ```dart
+// ShowDialog Builtin Function
 showDialog<void>(
   context: context,
   barrierDismissible: false,
