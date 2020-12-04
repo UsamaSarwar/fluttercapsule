@@ -164,4 +164,3 @@ paginate: 5
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  'markdown.extensions.attr_list': {}
