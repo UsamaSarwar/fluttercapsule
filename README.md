@@ -1,7 +1,8 @@
+
 ###### Q U I C K L I N K S
 [![fluttercapsule](https://img.shields.io/badge/Contribute-Now-211F1F?logo=GitHub&logoColor=ffffff)](https://github.com/UsamaSarwar/fluttercapsule/blob/master/README.md) 
 ![Flutter](https://i.imgur.com/e9V2Zf7.jpg)
-[![HEALTH](https://img.shields.io/badge/FLUTTER-HEALTH_STATUS-64DD17)](#flutter-health-status) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-CREATE-304FFE)](#create-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-RUN-2962FF)](#run-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-BUILD-0091EA)](#build-app) 
+[![HEALTH](https://img.shields.io/badge/FLUTTER-HEALTH_STATUS-64DD17)](#flutter-health-status) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-CREATE-304FFE)](#create-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-RUN-2962FF)](#run-app) [![Flutter Signing App](https://img.shields.io/badge/Signing_App-Google_Play-64DD17)](#signing-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-BUILD-0091EA)](#build-app) 
 ##### SYSTEM SETTINGS
 [![Usama Sarwar](https://img.shields.io/badge/Status_Bar-Settings-DD2C00)](#status-bar) [![Usama Sarwar](https://img.shields.io/badge/Screen_Orientation-Settings-FF6D00)](#lock-orientation) 
 ##### WIDGETS
@@ -68,6 +69,50 @@ _Sample: `flutter run -d chrome` to run flutter web project on Chrome Browser_
 flutter run -d device_ID
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+## Signing App
+### Step 1
+**Create a keystore**
+If you have an existing keystore, skip to the next step. If not, create one by running the following at the command line:
+```bash
+.\keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
+```
+**Note:** Keep this file private; do not check it into public source control. 
+**Note:** keytool may not be in your path. It is part of the `Java JDK`, which is installed as part of Android Studio. For the concrete path, run `flutter doctor -v` and see the path printed after `Java binary at:` and then use that fully qualified path replacing java with keytool.
+
+### Step 2
+Reference the keystore from the app Create a file named **key.properties**`<Project>/android/key.properties` that contains a reference to your keystore: 
+Add these lines in `/android/key.properties`
+```properties
+storePassword= password from previous step` 
+keyPassword= password from previous step`
+keyAlias= key`
+storeFile= `location of the key store file, e.g. /Users/username/key.jks`
+```
+### Step 3
+_Add these lines above android{ } (near line 16) in `/android/app/build.gradle`_
+```gradle
+def keystorePropertiesFile = rootProject.file("key.properties") 
+def keystoreProperties = new Properties() 
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile)) 
+```
+_Add these lines in android{ }  in `/android/app/build.gradle`_
+```
+signingConfigs { 
+	release { 
+	keyAlias keystoreProperties['keyAlias']
+	keyPassword keystoreProperties['keyPassword']
+	storeFile file(keystoreProperties['storeFile'])
+	storePassword keystoreProperties['storePassword'] 
+	} 
+} 
+buildTypes { 
+	release { 
+	signingConfig signingConfigs.release 
+	} 
+}
+```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+
 ## Build App
 _Run this command to build Android .apk file_
 ```dart
@@ -92,7 +137,7 @@ flutter build apk --target-platform android-arm,android-arm64,android-x64 --spli
 ```
 Run this command for Signing APK Key
 ```bash
-.\keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
+./keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Basic App
