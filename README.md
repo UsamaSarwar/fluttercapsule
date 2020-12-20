@@ -74,6 +74,10 @@ flutter run -d device_ID
 **Create a keystore**
 If you have an existing keystore, skip to the next step. If not, create one by running the following at the command line:
 ```bash
+./keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
+```
+**OR** _Run this if get error_
+```bash
 .\keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
 ```
 **Note:** Keep this file private; do not check it into public source control. 
@@ -83,10 +87,10 @@ If you have an existing keystore, skip to the next step. If not, create one by r
 Reference the keystore from the app Create a file named **key.properties**`<Project>/android/key.properties` that contains a reference to your keystore: 
 Add these lines in `/android/key.properties`
 ```properties
-storePassword= password from previous step` 
-keyPassword= password from previous step`
-keyAlias= key`
-storeFile= `location of the key store file, e.g. /Users/username/key.jks`
+storePassword= password from previous step
+keyPassword= password from previous step
+keyAlias= key
+storeFile= location of the key store file, e.g. /Users/username/key.jks
 ```
 ### Step 3
 _Add these lines above android{ } (near line 16) in `/android/app/build.gradle`_
