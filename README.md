@@ -139,7 +139,11 @@ _Run this command to reduce the APK Size to the minimum_
 ```dart
 flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
 ```
-
+#### Flutter Build Web Release
+_Run this command to build web release for Flutter Web App_
+```dart
+flutter build web --release --web-renderer html
+```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Basic App
 _This is a very basic beginner level app that is showing two List Tiles in its body. To run this code copy and paste it in_ `lib/main.dart`
