@@ -68,6 +68,11 @@ _Sample: `flutter run -d chrome` to run flutter web project on Chrome Browser_
 ```dart
 flutter run -d device_ID
 ```
+_Run this command to run the flutter web project on specific port of localhost_
+_Sample: `flutter run -d chrome --web-hostname localhost --web-port 8080` to run flutter web project on port `localhost:8080` on Web Browser_ 
+```dart
+flutter run -d chrome --web-hostname localhost --web-port [port_number]
+```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Signing App
 ### Step 1
