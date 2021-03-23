@@ -2,7 +2,7 @@
 ###### Q U I C K L I N K S
 [![fluttercapsule](https://img.shields.io/badge/Contribute-Now-211F1F?logo=GitHub&logoColor=ffffff)](https://github.com/UsamaSarwar/fluttercapsule/blob/master/README.md) 
 ![Flutter](https://i.imgur.com/e9V2Zf7.jpg)
-[![HEALTH](https://img.shields.io/badge/FLUTTER-HEALTH_STATUS-64DD17)](#flutter-health-status) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-CREATE-304FFE)](#create-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-RUN-2962FF)](#run-app) [![Flutter Signing App](https://img.shields.io/badge/Signing_App-Google_Play-64DD17)](#signing-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-BUILD-0091EA)](#build-app) 
+[![HEALTH](https://img.shields.io/badge/FLUTTER-HEALTH_STATUS-64DD17)](#flutter-health-status) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-CREATE-304FFE)](#create-app) [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-RUN-2962FF)](#run-app) [![Flutter Signing App](https://img.shields.io/badge/Signing_App-Google_Play-64DD17)](#signing-app) [![Flutter Packages](https://img.shields.io/badge/FLUTTER-PACKAGES-0091EA)](#Creating-a-plugin/dependency-in-Flutter)  [![Usama Sarwar](https://img.shields.io/badge/FLUTTER-BUILD-0091EA)](#build-app)
 ##### SYSTEM SETTINGS
 [![Usama Sarwar](https://img.shields.io/badge/Status_Bar-Settings-DD2C00)](#status-bar) [![Usama Sarwar](https://img.shields.io/badge/Screen_Orientation-Settings-FF6D00)](#lock-orientation) 
 ##### WIDGETS
@@ -115,6 +115,52 @@ buildTypes {
 	} 
 }
 ```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+
+## Creating a plugin/dependency in Flutter
+### Step 1
+_Create a package first, using the following command:_
+```
+flutter create --template-plugin --org --com.example --template= plugin --platform= android, ios, -a java -i objc plugin_name
+```
+_**Note:** you can use the any language you prefer for android and ios._
+To add web support in your plugin use the following command:
+```
+flutter create --template=plugin --platform=web .
+```
+### Step 2
+Add the plugin code in _```plugin_name.dart```_ and also arrange your _```pubspec.yaml```_ and add following fields:
+```
+name: name of your plugin project
+description: description of the plugin project
+version: version of the package to be hosted on pub.dev
+author: name of the author
+homepage: link of the package's homepage
+documentation: link of the plugin documentation
+publish_to: specify where to publish the plugin it should be a link, if you do not want to publish it then place none instead of a link
+
+environment:
+    sdk:
+       flutter:
+      
+dependencies:
+// list any dependencies used by the plugin
+
+dev_dependencies:
+// list any dev dependencies used by the plugin
+
+```
+### Step 3
+_Publishing the plugin package:_
+```
+flutter publish --dry-run # this command will help you verify that everything is as intended
+flutter pub publish # it will publish the plugin on pub.dev
+```
+Now, you have successfully published your plugin. You can check it by using the following link:
+```
+https://pub.dev/packages/YOUR_PACKAGE_NAME
+```
+
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 
 ## Build App
