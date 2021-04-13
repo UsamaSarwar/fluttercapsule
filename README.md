@@ -1,4 +1,5 @@
 
+
 ###### Q U I C K L I N K S
 [![fluttercapsule](https://img.shields.io/badge/Contribute-Now-211F1F?logo=GitHub&logoColor=ffffff)](https://github.com/UsamaSarwar/fluttercapsule/blob/master/README.md) 
 ![Flutter](https://i.imgur.com/e9V2Zf7.jpg)
@@ -6,7 +7,7 @@
 ##### SYSTEM SETTINGS
 [![Usama Sarwar](https://img.shields.io/badge/Status_Bar-Settings-DD2C00)](#status-bar) [![Usama Sarwar](https://img.shields.io/badge/Screen_Orientation-Settings-FF6D00)](#lock-orientation) 
 ##### WIDGETS
-[![Usama Sarwar](https://img.shields.io/badge/Loading-d50000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-263238)](#show-dialog-alert)
+[![Usama Sarwar](https://img.shields.io/badge/Loading-d50000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-263238)](#show-dialog-alert) [![Usama Sarwar](https://img.shields.io/badge/Form-AA00FF)](#form)
 ##### BEGINNER LEVEL FLUTTER APPS
 [![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-AA00FF)](#basic-app) [![Usama Sarwar](https://img.shields.io/badge/Stateless_Widget-C51162)](#stateless-widget) [![Usama Sarwar](https://img.shields.io/badge/Stateful_Widget-d50000)](#stateful-widget) [![Usama Sarwar](https://img.shields.io/badge/App-Navigation-00C853)](#app-navigation) [![Usama Sarwar](https://img.shields.io/badge/ListView-Builder-C51162)](#listview-builder) 
 ## Flutter Health Status
@@ -724,6 +725,86 @@ showDialog<void>(
     );
   },
 );
+```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+## Form
+_Import Get from [Pub](https://pub.dev/packages/get)_
+```yaml
+dependencies:
+  get:
+```
+_Generate GlobalKey for the `form validation`_
+```dart
+GlobalKey<FormState> key = GlobalKey<FormState>();
+```
+_Call this function where to show popup_
+```dart
+  Get.bottomSheet(
+    BottomSheet(
+      onClosing: () => Get.back(),
+      builder: (context) {
+        return Form(
+          key: key,
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.close),
+                      onPressed: () => Get.back(),
+                    ),
+                    Text(
+                      'Form Title here',
+                      style: GoogleFonts.pacifico(
+                        textStyle: TextStyle(fontSize: 22.0),
+                      ),
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.check),
+                      onPressed: () {
+                        if (key.currentState.validate()) {
+                          // Get.to();
+                          key.currentState.save();
+                          Get.close(0);
+                          Get.snackbar(
+                              'Done', 'Data is submitted Successfully!',
+                              snackPosition: SnackPosition.BOTTOM);
+                        }
+                      },
+                    ),
+                  ],
+                ),
+                TextFormField(
+                  maxLength: 30,
+                  keyboardType: TextInputType.name,
+                  //  inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.person_sharp),
+                    helperText: 'i.e Usama Sarwar',
+                    labelText: 'Full Name',
+                  ),
+                  validator: (_val) {
+                    if (_val.isEmpty) {
+                      return '*Required';
+                    } else {
+                      return null;
+                    }
+                  },
+                  onChanged: (_val) {
+                   // Save _val in some variable
+                  },
+                )
+              ],
+            ),
+          ),
+        );
+      },
+    ),
+    isScrollControlled: true,
+  );
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 #### Follow Us
