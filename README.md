@@ -192,9 +192,16 @@ _Run this command to reduce the APK Size to the minimum_
 flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
 ```
 #### Flutter Build Web Release
-_Run this command to build web release for Flutter Web App_
+_When running and building apps for the web, you can choose between two different renderers. The --web-renderer command line option takes one of three values, auto, html, or canvaskit._
+**HTML renderer**
+Uses a combination of HTML elements, CSS, Canvas elements, and SVG elements. This renderer has a smaller download size.
 ```dart
-flutter build web --release --web-renderer html
+flutter build web --web-renderer html --release
+```
+**CanvasKit renderer**
+This renderer is fully consistent with Flutter mobile and desktop, has faster performance with higher widget density, but adds about 2MB in download size.
+```dart
+flutter build web --web-renderer canvaskit --release
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Basic App
