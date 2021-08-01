@@ -193,12 +193,15 @@ flutter build apk --target-platform android-arm,android-arm64,android-x64 --spli
 ```
 #### Flutter Build Web Release
 _When running and building apps for the web, you can choose between two different renderers. The --web-renderer command line option takes one of three values, auto, html, or canvaskit._
+<br>
 **HTML renderer**
+<br>
 Uses a combination of HTML elements, CSS, Canvas elements, and SVG elements. This renderer has a smaller download size.
 ```dart
 flutter build web --web-renderer html --release
 ```
 **CanvasKit renderer**
+<br>
 This renderer is fully consistent with Flutter mobile and desktop, has faster performance with higher widget density, but adds about 2MB in download size.
 ```dart
 flutter build web --web-renderer canvaskit --release
