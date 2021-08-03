@@ -90,12 +90,12 @@ class Screen2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('This is Screen 2'),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Home Screen'),
               // This will navigate to named route '/' that is Home Screen
               onPressed: () => Navigator.pushNamed(context, '/'),
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Screen 1'),
               // This will navigate to the parent screen from where it reached here
               onPressed: () => Navigator.pop(context),
