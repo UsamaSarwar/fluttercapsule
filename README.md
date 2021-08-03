@@ -485,7 +485,7 @@ child: Column(
 mainAxisAlignment: MainAxisAlignment.center,
 children: [
 Text('This is Home Screen'),
-RaisedButton(
+ElevatedButton(
 child: Text('Screen 1'),
 // This will navigate to named route '/S1' that is Screen 1
 onPressed: () => Navigator.pushNamed(context, '/S1'),
@@ -503,12 +503,12 @@ child: Column(
 mainAxisAlignment: MainAxisAlignment.center,
 children: [
 Text('This is Screen 1'),
-RaisedButton(
+ElevatedButton(
 child: Text('Home Screen'),
 // This will navigate to the parent screen from where it reached here
 onPressed: () => Navigator.pop(context),
 ),
-RaisedButton(
+ElevatedButton(
 child: Text('Screen 2'),
 // This will navigate to named route '/S1/S2' that is Screen 2
 onPressed: () => Navigator.pushNamed(context, '/S1/S2'),
@@ -527,12 +527,12 @@ child: Column(
 mainAxisAlignment: MainAxisAlignment.center,
 children: [
 Text('This is Screen 2'),
-RaisedButton(
+ElevatedButton(
 child: Text('Home Screen'),
 // This will navigate to named route '/' that is Home Screen
 onPressed: () => Navigator.pushNamed(context, '/'),
 ),
-RaisedButton(
+ElevatedButton(
 child: Text('Screen 1'),
 // This will navigate to the parent screen from where it reached here
 onPressed: () => Navigator.pop(context),
@@ -710,21 +710,21 @@ showDialog<void>(
       title: Text('Alert Title'),
       content: Text('My Alert Msg'),
       actions: <Widget>[
-        FlatButton(
+        TextButton(
           child: Text('Ask me later'),
           onPressed: () {
             print('Ask me later pressed');
             Navigator.of(context).pop();
           },
         ),
-        FlatButton(
+        TextButton(
           child: Text('Cancel'),
           onPressed: () {
             print('Cancel pressed');
             Navigator.of(context).pop();
           },
         ),
-        FlatButton(
+        TextButton(
           child: Text('OK'),
           onPressed: () {
             print('OK pressed');
