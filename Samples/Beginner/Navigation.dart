@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Routing Sample App',
       // Initial Route when App Starts
-      initialRoute: '/', 
+      initialRoute: '/',
       // Named Routes for all widgets in App
       routes: {
         // We can use any string instead of '\'
@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('This is Home Screen'),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Screen 1'),
               // This will navigate to named route '/S1' that is Screen 1
               onPressed: () => Navigator.pushNamed(context, '/S1'),
@@ -60,12 +60,12 @@ class Screen1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('This is Screen 1'),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Home Screen'),
               // This will navigate to the parent screen from where it reached here
               onPressed: () => Navigator.pop(context),
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Screen 2'),
               // This will navigate to named route '/S1/S2' that is Screen 2
               onPressed: () => Navigator.pushNamed(context, '/S1/S2'),
@@ -90,12 +90,12 @@ class Screen2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('This is Screen 2'),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Home Screen'),
               // This will navigate to named route '/' that is Home Screen
               onPressed: () => Navigator.pushNamed(context, '/'),
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Screen 1'),
               // This will navigate to the parent screen from where it reached here
               onPressed: () => Navigator.pop(context),
