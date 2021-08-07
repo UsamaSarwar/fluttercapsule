@@ -818,7 +818,7 @@ _Call this function where to show popup_
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## SplashScreen
-```
+```dart
 // Importing Material Library
 import 'package:flutter/material.dart';
 
