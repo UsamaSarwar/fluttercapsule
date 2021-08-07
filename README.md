@@ -9,7 +9,8 @@
 ##### WIDGETS
 [![Usama Sarwar](https://img.shields.io/badge/Loading-d50000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-263238)](#show-dialog-alert) [![Usama Sarwar](https://img.shields.io/badge/Form-AA00FF)](#form)
 ##### BEGINNER LEVEL FLUTTER APPS
-[![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-AA00FF)](#basic-app) [![Usama Sarwar](https://img.shields.io/badge/Stateless_Widget-C51162)](#stateless-widget) [![Usama Sarwar](https://img.shields.io/badge/Stateful_Widget-d50000)](#stateful-widget) [![Usama Sarwar](https://img.shields.io/badge/App-Navigation-00C853)](#app-navigation) [![Usama Sarwar](https://img.shields.io/badge/ListView-Builder-C51162)](#listview-builder) 
+[![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-AA00FF)](#basic-app) [![Usama Sarwar](https://img.shields.io/badge/Stateless_Widget-C51162)](#stateless-widget) [![Usama Sarwar](https://img.shields.io/badge/Stateful_Widget-d50000)](#stateful-widget) [![Usama Sarwar](https://img.shields.io/badge/App-Navigation-00C853)](#app-navigation) [![Usama Sarwar](https://img.shields.io/badge/ListView-Builder-C51162)](#listview-builder)
+[![Splash Screen](https://img.shields.io/badge/SplashScreen-AA00FF)](#splashscreen)
 ## Flutter Health Status
 _Run this command to check Flutter Status on your device_
 ```bash
