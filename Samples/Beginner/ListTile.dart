@@ -27,7 +27,8 @@ void main() => runApp(
               // padding for wraping with some space
               Padding(
                 // padding: EdgeInsets.all(8.0), // Padding value set to 8.0 on all sides
-                padding: EdgeInsets.only(right: 15.0), // Padding value set to 15.0 on right side
+                padding: EdgeInsets.only(
+                    right: 15.0), // Padding value set to 15.0 on right side
                 child: Icon(Icons.create_sharp), // Added a favourite icon
               ),
             ],
