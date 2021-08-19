@@ -965,7 +965,7 @@ class HomePage extends StatelessWidget {
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## SignUp Form Validation
-This is signup form validation app that have FocusNode and as to validate the form. FocusNode is an object that can be used by a stateful widget to obtain the keyboard focus and to handle keyboard events.
+_This is signup form validation app that have FocusNode and as to validate the form. FocusNode is an object that can be used by a stateful widget to obtain the keyboard focus and to handle keyboard events.
 To run this code copy and paste it in._ `lib/main.dart`
 ```dart
 // Importing Material Library
