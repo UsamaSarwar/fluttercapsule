@@ -15,18 +15,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Capsule',
       // Route when App Starts
-      home: SignupForm(),
+      home: SignupFormValidation(),
     );
   }
 }
 
-// SignupForm Widget
-class SignupForm extends StatefulWidget {
+// Signup Form Validation Widget
+class SignupFormValidation extends StatefulWidget {
   @override
-  _SignupFormState createState() => _SignupFormState();
+  _SignupFormValidationState createState() => _SignupFormValidationState();
 }
 
-class _SignupFormState extends State<SignupForm> {
+class _SignupFormValidationState extends State<SignupFormValidation> {
   // TextEditingController - A controller for an editable text field.
   TextEditingController _name;
   TextEditingController _email;
