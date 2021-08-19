@@ -10,7 +10,7 @@
 [![Usama Sarwar](https://img.shields.io/badge/Loading-d50000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-263238)](#show-dialog-alert) [![Usama Sarwar](https://img.shields.io/badge/Form-AA00FF)](#form)
 ##### BEGINNER LEVEL FLUTTER APPS
 [![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-AA00FF)](#basic-app) [![Usama Sarwar](https://img.shields.io/badge/Stateless_Widget-C51162)](#stateless-widget) [![Usama Sarwar](https://img.shields.io/badge/Stateful_Widget-d50000)](#stateful-widget) [![Usama Sarwar](https://img.shields.io/badge/App-Navigation-00C853)](#app-navigation) [![Usama Sarwar](https://img.shields.io/badge/ListView-Builder-C51162)](#listview-builder)
-[![Splash Screen](https://img.shields.io/badge/SplashScreen-AA00FF)](#splashscreen)
+[![Splash Screen](https://img.shields.io/badge/SplashScreen-AA00FF)](#splashscreen) [![Signup Screen](https://img.shields.io/badge/SignUp_Screen-d50000)](#signup-screen)
 ## Flutter Health Status
 _Run this command to check Flutter Status on your device_
 ```bash
@@ -964,8 +964,13 @@ class HomePage extends StatelessWidget {
 }
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+<<<<<<< HEAD
 ## SignUp Form Validation
 This is signup form validation app that have FocusNode and as to validate the form.FocusNode is an object that can be used by a stateful widget to obtain the keyboard focus and to handle keyboard events.
+=======
+## SignUp Screen
+_This is signup screen app that have FocusNode and to validate the form.FocusNode is an object that can be used by a stateful widget to obtain the keyboard focus and to handle keyboard events.
+>>>>>>> d489d04e6f4c65b7fc3cb79f611fe0eb71011569
 To run this code copy and paste it in._ `lib/main.dart`
 ```dart
 // Importing Material Library
