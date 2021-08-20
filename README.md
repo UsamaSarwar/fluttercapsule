@@ -10,7 +10,7 @@
 [![Usama Sarwar](https://img.shields.io/badge/Loading-d50000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-263238)](#show-dialog-alert) [![Usama Sarwar](https://img.shields.io/badge/Form-AA00FF)](#form)
 ##### BEGINNER LEVEL FLUTTER APPS
 [![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-AA00FF)](#basic-app) [![Usama Sarwar](https://img.shields.io/badge/Stateless_Widget-C51162)](#stateless-widget) [![Usama Sarwar](https://img.shields.io/badge/Stateful_Widget-d50000)](#stateful-widget) [![Usama Sarwar](https://img.shields.io/badge/App-Navigation-00C853)](#app-navigation) [![Usama Sarwar](https://img.shields.io/badge/ListView-Builder-C51162)](#listview-builder)
-[![Splash Screen](https://img.shields.io/badge/SplashScreen-AA00FF)](#splashscreen) [![Signup Screen](https://img.shields.io/badge/SignUp_Screen-d50000)](#signup-screen)
+[![Splash Screen](https://img.shields.io/badge/SplashScreen-AA00FF)](#splashscreen) [![Signup](https://img.shields.io/badge/SignUp_Form-Validation-d50000)](#signup-form-validation)
 ## Flutter Health Status
 _Run this command to check Flutter Status on your device_
 ```bash
@@ -611,7 +611,7 @@ elevation: 5.0,
 child: ListTile(
 // To show Snackbar
 onTap: () {
-Scaffold.of(context).showSnackBar(
+ScaffoldMessenger.of(context).showSnackBar(
 SnackBar(content: Text('You tapped on ${list[index]}')));
 },
 // Smile, because it's good for health
@@ -964,8 +964,8 @@ class HomePage extends StatelessWidget {
 }
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
-## SignUp Screen
-_This is signup screen app that have FocusNode and to validate the form.FocusNode is an object that can be used by a stateful widget to obtain the keyboard focus and to handle keyboard events.
+## SignUp Form Validation
+_This is signup form validation app that have FocusNode and as to validate the form. FocusNode is an object that can be used by a stateful widget to obtain the keyboard focus and to handle keyboard events.
 To run this code copy and paste it in._ `lib/main.dart`
 ```dart
 // Importing Material Library
@@ -985,18 +985,16 @@ return MaterialApp(
 debugShowCheckedModeBanner: false,
 title: 'Flutter Capsule',
 // Route when App Starts
-home: SignupForm(),
-);
-}
-}
+home: SignupFormValidation(),
+);}}
 
-// SignupForm Widget
-class SignupForm extends StatefulWidget {
+// Signup Form Validation Widget
+class SignupFormValidation extends StatefulWidget {
 @override
-_SignupFormState createState() => _SignupFormState();
+_SignupFormValidationState createState() => _SignupFormValidationState();
 }
 
-class _SignupFormState extends State<SignupForm> {
+class _SignupFormValidationState extends State<SignupFormValidation> {
 // TextEditingController - A controller for an editable text field.
 TextEditingController _name;
 TextEditingController _email;
@@ -1054,8 +1052,7 @@ style: TextStyle(
 color: Colors.white,
 fontWeight: FontWeight.w600,
 fontSize: Theme.of(context).textTheme.headline6.fontSize,
-),
-),
+),),
 Text(
 "Capsule",
 // Styling text
@@ -1063,11 +1060,7 @@ style: TextStyle(
 color: Colors.pinkAccent,
 fontWeight: FontWeight.w600,
 fontSize: Theme.of(context).textTheme.headline6.fontSize,
-),
-),
-],
-),
-),
+),),],),),
 body: Padding(
 padding: EdgeInsets.symmetric(
 horizontal: 16,
@@ -1090,8 +1083,7 @@ FocusScope.of(context).requestFocus(emailFocus);
 validator: (val) {
 if (val.isEmpty) return "Field is Empty";
 return null;
-},
-),
+},),
 // call the formTextWidget as a Email Field
 formTextWidget(
 hintText: "Email",
@@ -1104,11 +1096,10 @@ FocusScope.of(context).requestFocus(passFocus);
 },
 validator: (val) {
 if (val.isEmpty || !val.contains("@gmail.com")) {
-                      return "Field must be conatin @gmail.com";
+return "Field must be conatin @gmail.com";
 }
 return null;
-},
-),
+},),
 // call the formTextWidget as a Password Field
 formTextWidget(
 hintText: "Password",
@@ -1120,19 +1111,16 @@ onTap: () {
 // setState will change our state and we can see the password visibility or not
 setState(() {
 _obscureText = !_obscureText;
-});
-},
+});},
 child: Icon(
 _obscureText ? Icons.visibility : Icons.visibility_off,
 color: _obscureText ? Colors.amber : Colors.white,
-),
-),
+),),
 validator: (val) {
 if (val.isEmpty || val.length < 7)
 return "Field have more than 7 digits";
 return null;
-},
-),
+},),
 // SizedBox - A box with a specified size.
 SizedBox(
 height: 25,
@@ -1161,17 +1149,7 @@ shape: RoundedRectangleBorder(
 borderRadius: BorderRadius.circular(17),
 ),
 child: Text("Create an Account",
-),
-),
-],
-),
-),
-),
-),
-);
-}
-}
-
+),),],),),),),);}}
 // making the formTextWidget
 // contain the TextFormField
 Widget formTextWidget({
@@ -1209,13 +1187,11 @@ borderSide: BorderSide(color: Colors.white),
 ),
 errorBorder: UnderlineInputBorder(
 borderSide: BorderSide(color: Colors.white),
-),
-),
+),),
 focusNode: focusNode,
 textInputAction: textInputAction,
 onEditingComplete: onEditingComplete,
-);
-}
+);}
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 #### Follow Us
