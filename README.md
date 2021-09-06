@@ -11,6 +11,7 @@
 ##### BEGINNER LEVEL FLUTTER APPS
 [![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-AA00FF)](#basic-app) [![Usama Sarwar](https://img.shields.io/badge/Stateless_Widget-C51162)](#stateless-widget) [![Usama Sarwar](https://img.shields.io/badge/Stateful_Widget-d50000)](#stateful-widget) [![Usama Sarwar](https://img.shields.io/badge/App-Navigation-00C853)](#app-navigation) [![Usama Sarwar](https://img.shields.io/badge/ListView-Builder-C51162)](#listview-builder)
 [![Splash Screen](https://img.shields.io/badge/SplashScreen-AA00FF)](#splashscreen) [![Signup Screen](https://img.shields.io/badge/SignUp_Screen-d50000)](#signup-screen)
+[![Splash Screen](https://img.shields.io/badge/Default_Flutter-Theme-FF6D00)](#default-flutter-theme) [![Default Flutter Theme](https://img.shields.io/badge/Default-Flutter-Theme-d50000)](#signup-screen)
 ## Flutter Health Status
 _Run this command to check Flutter Status on your device_
 ```bash
@@ -964,13 +965,8 @@ class HomePage extends StatelessWidget {
 }
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
-<<<<<<< HEAD
 ## SignUp Form Validation
-This is signup form validation app that have FocusNode and as to validate the form.FocusNode is an object that can be used by a stateful widget to obtain the keyboard focus and to handle keyboard events.
-=======
-## SignUp Screen
-_This is signup screen app that have FocusNode and to validate the form.FocusNode is an object that can be used by a stateful widget to obtain the keyboard focus and to handle keyboard events.
->>>>>>> d489d04e6f4c65b7fc3cb79f611fe0eb71011569
+_This is signup form validation app that have FocusNode and as to validate the form.FocusNode is an object that can be used by a stateful widget to obtain the keyboard focus and to handle keyboard events.
 To run this code copy and paste it in._ `lib/main.dart`
 ```dart
 // Importing Material Library
@@ -1197,6 +1193,73 @@ focusNode: focusNode,
 textInputAction: textInputAction,
 onEditingComplete: onEditingComplete,
 );}
+```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+## Default Flutter Theme 
+_Themes are just Theme widgets created at the root of an app by the MaterialApp. To share a Theme across an entire app, provide a ThemeData to the MaterialApp constructor.
+To run this code copy and paste it in._ `lib/main.dart`
+```
+dart
+// Importing Material Library
+import 'package:flutter/material.dart';
+
+// Main Function of this App
+// We will call runApp that is a built-in function that will run the App
+void main() {
+runApp(MyApp());
+}
+
+// MyApp Widget
+class MyApp extends StatelessWidget {
+
+@override
+Widget build(BuildContext context) {
+const appName = 'Flutter Capsule';
+return MaterialApp(
+debugShowCheckedModeBanner: false,
+title: appName,
+theme: ThemeData(
+// Define the default colors.
+scaffoldBackgroundColor: Colors.indigo,
+appBarTheme:const AppBarTheme(
+backgroundColor: Colors.red,),
+// Define the default TextTheme. Use this to specify the default
+// text styling for headlines, titles, bodies of text, and more.
+textTheme: const TextTheme(
+headline1: TextStyle(fontSize: 72.0,color:Colors.white, fontWeight: FontWeight.bold, fontFamily: 'Georgia',),
+headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic,fontFamily: 'Hind'),
+),
+),
+home: const MyHomePage(
+title: appName,
+),
+);
+}}
+
+// MyHomePage Widget
+class MyHomePage extends StatelessWidget {
+final String title;
+const MyHomePage({Key? key, required this.title}) : super(key: key);
+@override
+Widget build(BuildContext context) {
+return Scaffold(
+appBar: AppBar(
+title: Text(title),
+),
+body: Column(
+crossAxisAlignment: CrossAxisAlignment.start,
+children: [
+Text('Learn the Theme Data',
+// Styling text as the default TextTheme
+style: Theme.of(context).textTheme.headline6,),
+Text('Applies a theme to descendant widgets.',
+// Styling text as the default TextTheme
+style: Theme.of(context).textTheme.headline1,
+),
+],
+),
+);
+}}
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 #### Follow Us
