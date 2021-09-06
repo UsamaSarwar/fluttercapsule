@@ -1199,8 +1199,7 @@ onEditingComplete: onEditingComplete,
 ## Default Flutter Theme 
 _Themes are just Theme widgets created at the root of an app by the MaterialApp. To share a Theme across an entire app, provide a ThemeData to the MaterialApp constructor.
 To run this code copy and paste it in._ `lib/main.dart`
-```
-dart
+```dart
 // Importing Material Library
 import 'package:flutter/material.dart';
 
