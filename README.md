@@ -1265,7 +1265,7 @@ style: Theme.of(context).textTheme.headline1,
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 ## Implement Search
-_As we are doing here how to Implement Search Function in Flutter with the help of ListViewBuilder Widget. This is a basic example of working the search function _ `lib/main.dart`
+_As we are doing here how to Implement Search Function in Flutter with the help of ListViewBuilder Widget. This is a basic example of working the search function._ `lib/main.dart`
 ```dart
 // Importing Material Library
 import 'package:flutter/material.dart';
