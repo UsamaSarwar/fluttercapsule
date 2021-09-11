@@ -13,6 +13,8 @@
 [![Splash Screen](https://img.shields.io/badge/SplashScreen-AA00FF)](#splashscreen) 
 [![Kishor Kc](https://img.shields.io/badge/Default_Flutter-Theme-FF6D00)](#default-flutter-theme)
 [![Kishor Kc](https://img.shields.io/badge/SignUp_Form-Validation-d50000)](#signup-form-validation)
+[![Kishor Kc](https://img.shields.io/badge/Implement_Search-C51162)](#implement-search)
+
 ## Flutter Health Status
 _Run this command to check Flutter Status on your device_
 ```bash
@@ -1261,6 +1263,124 @@ style: Theme.of(context).textTheme.headline1,
 ),
 );
 }}
+```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+## Implement Search
+_As we are doing here how to Implement Search Function in Flutter with the help of ListViewBuilder Widget. This is a basic example of working the search function._ `lib/main.dart`
+```dart
+// Importing Material Library
+import 'package:flutter/material.dart';
+
+// Main Function of this App
+// We will call runApp that is a built-in function that will run the App
+void main() {
+  runApp(MyApp());
+}
+
+// MyApp Widget
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.indigo,
+      ),
+      home: SearchPage(),
+    );
+  }
+}
+
+// SearchPage Widget
+class SearchPage extends StatefulWidget {
+  @override
+  _SearchPageState createState() => _SearchPageState();
+}
+
+class _SearchPageState extends State<SearchPage> {
+  // make the list of fruits
+  List<String> fruits = [
+    'apple',
+    'orange',
+    'banana',
+    'grapes',
+    'pineapple',
+    'mango',
+    'avocado',
+    'lychee',
+    'watermelon',
+    'kiwi',
+    'Guava',
+    'Pomegranates',
+    'papaya',
+    'lemon',
+  ];
+
+  // empty list of getFruits
+  List<String> getFruits = [];
+
+  // TextEditingController - A controller for an text field.
+  TextEditingController _controller = TextEditingController();
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Flutter Capsule"),
+      ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: TextFormField(
+              controller: _controller,
+              decoration: InputDecoration(
+                hintText: 'Search here',
+                // Styling text as the default TextTheme
+                hintStyle: TextStyle(
+                  color: Colors.grey,
+                  fontSize: Theme.of(context).textTheme.subtitle1.fontSize,
+                ),
+              ),
+              onChanged: (value) {
+                setState(() {
+                  // call the list of fruits as a WHERE clause
+                  // and set the list of fruits into the empty list of getFruits
+                  getFruits = fruits
+                      .where((element) => element.contains(value.toLowerCase()))
+                      .toList();
+                });
+              },
+            ),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          // checking the _controller and getFruits.length is equal to 0 or not
+          // if null or 0 then we get CircularProgressIndicator and if not null or 0 then we get the data
+          _controller.text.isNotEmpty && getFruits.length == 0
+              ? Center(
+                  child: CircularProgressIndicator(),
+                )
+              : Expanded(
+                  child: ListView.builder(
+                      // if _controller.text.isNotEmpty is a true then we get CircularProgressIndicator and if false, we get data
+                      itemCount: _controller.text.isNotEmpty
+                          ? getFruits.length
+                          : fruits.length,
+                      itemBuilder: (_, index) {
+                        return ListTile(
+                          // if _controller.text.isNotEmpty is a true then we get List of getFruits and if false we get List of fruits
+                          title: Text(_controller.text.isNotEmpty
+                              ? getFruits[index]
+                              : fruits[index]),
+                        );
+                      }),
+                )
+        ],
+      ),
+    );
+  }
+}
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 #### Follow Us
