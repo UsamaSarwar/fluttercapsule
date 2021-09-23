@@ -7,7 +7,7 @@
 ##### SYSTEM SETTINGS
 [![Usama Sarwar](https://img.shields.io/badge/Status_Bar-Settings-DD2C00)](#status-bar) [![Usama Sarwar](https://img.shields.io/badge/Screen_Orientation-Settings-FF6D00)](#lock-orientation) 
 ##### WIDGETS
-[![Usama Sarwar](https://img.shields.io/badge/Loading-d50000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-263238)](#show-dialog-alert) [![Usama Sarwar](https://img.shields.io/badge/Form-AA00FF)](#form)[![Kishor Kc](https://img.shields.io/badge/Slider-64DD17)](#slider)
+[![Usama Sarwar](https://img.shields.io/badge/Loading-d50000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-263238)](#show-dialog-alert) [![Usama Sarwar](https://img.shields.io/badge/Form-AA00FF)](#form) [![Kishor Kc](https://img.shields.io/badge/Slider-64DD17)](#slider)
 ##### BEGINNER LEVEL FLUTTER APPS
 [![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-AA00FF)](#basic-app) [![Usama Sarwar](https://img.shields.io/badge/Stateless_Widget-C51162)](#stateless-widget) [![Usama Sarwar](https://img.shields.io/badge/Stateful_Widget-d50000)](#stateful-widget) [![Usama Sarwar](https://img.shields.io/badge/App-Navigation-00C853)](#app-navigation) [![Usama Sarwar](https://img.shields.io/badge/ListView-Builder-C51162)](#listview-builder)
 [![Splash Screen](https://img.shields.io/badge/SplashScreen-AA00FF)](#splashscreen) 
