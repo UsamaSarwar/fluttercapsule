@@ -7,7 +7,7 @@
 ##### SYSTEM SETTINGS
 [![Usama Sarwar](https://img.shields.io/badge/Status_Bar-Settings-DD2C00)](#status-bar) [![Usama Sarwar](https://img.shields.io/badge/Screen_Orientation-Settings-FF6D00)](#lock-orientation) 
 ##### WIDGETS
-[![Usama Sarwar](https://img.shields.io/badge/Loading-d50000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-263238)](#show-dialog-alert) [![Usama Sarwar](https://img.shields.io/badge/Form-AA00FF)](#form)
+[![Usama Sarwar](https://img.shields.io/badge/Loading-d50000)](#loading-indicator) [![Usama Sarwar](https://img.shields.io/badge/Dialog-263238)](#show-dialog-alert) [![Usama Sarwar](https://img.shields.io/badge/Form-AA00FF)](#form) [![Kishor Kc](https://img.shields.io/badge/Slider-64DD17)](#slider)
 ##### BEGINNER LEVEL FLUTTER APPS
 [![Usama Sarwar](https://img.shields.io/badge/Well_Commented-Basic_App-AA00FF)](#basic-app) [![Usama Sarwar](https://img.shields.io/badge/Stateless_Widget-C51162)](#stateless-widget) [![Usama Sarwar](https://img.shields.io/badge/Stateful_Widget-d50000)](#stateful-widget) [![Usama Sarwar](https://img.shields.io/badge/App-Navigation-00C853)](#app-navigation) [![Usama Sarwar](https://img.shields.io/badge/ListView-Builder-C51162)](#listview-builder)
 [![Splash Screen](https://img.shields.io/badge/SplashScreen-AA00FF)](#splashscreen) 
@@ -1381,6 +1381,51 @@ class _SearchPageState extends State<SearchPage> {
     );
   }
 }
+```
+[![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
+## Slider
+_Used to select from a range of values._
+```dart
+class SliderWidget extends StatefulWidget {
+  @override
+  State<SliderWidget> createState() => _SliderWidgetState();
+}
+
+class _SliderWidgetState extends State<SliderWidget> {
+  double value = 0.0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Flutter Capsule"),
+      ),
+      // Slider Widget
+      // Used to select from a range of values.
+      body: Slider(
+        // activeColor - The color to use for the portion of the slider track that is active.
+        activeColor: Colors.orangeAccent,
+        // min - The minimum value can be 0.0
+        min: 0.0,
+        // max - The maximum value can be 100.
+        max: 100.0,
+        // value - The currently selected value for this slider.
+        value: value,
+        // onChanged is called while the user is selecting a new value for the slider.
+        onChanged: (val) {
+          setState(() {
+            value = val;
+          });
+        },
+        // divisions - no of parts can be divided
+        divisions: 4,
+        // A label to show above the slider when the slider is active.
+        label: "$value",
+      ),
+    );
+  }
+}
+
 ```
 [![TOP](https://img.shields.io/badge/Goto-Top-000000)](#q-u-i-c-k-l-i-n-k-s)
 #### Follow Us
